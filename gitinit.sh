@@ -7,7 +7,9 @@ read PATclassic
 echo 'enter repo name'
 read reponame
 
-
+mkdir ./$reponame
+cd ./$reponame
+echo $reponame >> README.md
 git init
 git add *
 git commit -m "first commit"
